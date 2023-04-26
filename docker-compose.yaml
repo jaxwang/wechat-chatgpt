@@ -1,7 +1,7 @@
 version: '3'
 services:
   wechat-chatgpt:
-    build: .
+    image: warpspeed/wechat-chatgpt:v1.0
     env_file:
       - .env
     volumes:
