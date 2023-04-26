@@ -27,7 +27,7 @@ export async function reply(messages: ChatMessage[]) {
     })
   ])
   return w
-    .url('/v1/chat/completions')
+    .url('/message') //    /v1/chat/completions
     .headers({
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json'
